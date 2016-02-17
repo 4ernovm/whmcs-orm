@@ -1,6 +1,7 @@
 {
     "name": "4ernovm/whmcs-orm",
     "description": "A set of models for WHMCS tables",
+    "minimum-stability": "dev",
     "authors": [
         { "name": "Michael Chernov", "email": "4ernovm@gmail.com" }
     ],
