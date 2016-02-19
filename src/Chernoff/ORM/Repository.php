@@ -42,7 +42,7 @@ abstract class Repository
      * @param array $columns
      * @return array
      */
-    public function all($columns = array())
+    public function all($columns = array("*"))
     {
         return $this->model->all($columns)->all();
     }
@@ -62,7 +62,7 @@ abstract class Repository
      * @param array $columns
      * @return Collection|Model
      */
-    public function find($id, array $columns = array())
+    public function find($id, array $columns = array("*"))
     {
         return $this->model->find($id, $columns);
     }
