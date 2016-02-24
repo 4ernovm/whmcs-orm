@@ -6,21 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
- * Class Hosting
+ * Class Invoice
  * @package Chernoff\ORM\Models
  */
-class Hosting extends Model
+class Invoice extends Model
 {
     /** @var string */
-    protected $table = 'tblhosting';
-
-    /**
-     * @return BelongsTo
-     */
-    public function product()
-    {
-        return $this->belongsTo('Chernoff\ORM\Models\Product', 'packageid');
-    }
+    protected $table = 'tblinvoices';
 
     /**
      * @return BelongsTo

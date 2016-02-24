@@ -4,6 +4,7 @@ namespace Chernoff\ORM\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * Class Ticket
@@ -28,5 +29,13 @@ class Ticket extends Model
     public function notes()
     {
         return $this->hasMany('Chernoff\ORM\Models\TicketNote', 'ticketid');
+    }
+
+    /**
+     * @return BelongsTo
+     */
+    public function user()
+    {
+        return $this->belongsTo('Chernoff\ORM\Models\User', 'userid');
     }
 }
