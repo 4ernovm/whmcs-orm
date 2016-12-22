@@ -6,7 +6,7 @@
         { "name": "Michael Chernov", "email": "4ernovm@gmail.com" }
     ],
     "require": {
-        "illuminate/database": "4.1.*"
+        "illuminate/database": "5.2.*"
     },
     "autoload": {
         "psr-4": {
